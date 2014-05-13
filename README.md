@@ -8,7 +8,7 @@
 
 
 #### First Kernel Install
-**DO NOT ADD /etc/fstab and /etc/modules ENTRY**
+**DO NOT ADD /etc/fstab and /etc/modules ENTRY IF YOU HAVE MULTI-KERNEL**
 
     $ chmod +x install_on_first_kernel.sh
     # ./install_on_first_kernel.sh
