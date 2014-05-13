@@ -1,3 +1,5 @@
 # GNU/Linux Gedit Temp Files
 *~
 .gitignore~
+# target folder
+paragon-ufsd-*/
