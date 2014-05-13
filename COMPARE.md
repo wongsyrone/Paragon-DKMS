@@ -24,5 +24,5 @@
 |Self Support*|Y|Y|
 |Complimentary support**|N|Y|
 
-* Self Support provides resources and services for customers, including full product documentation, technical resources, access to the knowledge base, participation in discussion forums.
-** Complimentary support offers you installation assistance and free support for 60 consecutive calendar days - starting from your Paragon software and license date of purchase. Support requests are to be submitted via Paragon Web site only.
+NOTE: * Self Support provides resources and services for customers, including full product documentation, technical resources, access to the knowledge base, participation in discussion forums.
+   ** Complimentary support offers you installation assistance and free support for 60 consecutive calendar days - starting from your Paragon software and license date of purchase. Support requests are to be submitted via Paragon Web site only.
