@@ -20,7 +20,7 @@ ufsd_status=$(dkms status -m ${pkgname} -v ${pkgver})
 if ! [ "$ufsd_status" == ""  ]; then
     rmmod -f -v -w ufsd
     rmmod -f -v -w jnl
-    # remove previous added loading module and mount entry  
+    # remove previous added loading module and mount item  
     sed -i '/ufsd/d' /etc/modules
     sed -i '/ufsd/d' /etc/fstab
     dkms uninstall -m ${pkgname} -v ${pkgver}
@@ -28,7 +28,7 @@ if ! [ "$ufsd_status" == ""  ]; then
 	rm -rf /var/lib/dkms/${pkgname}
 	rm -rf /usr/src/${pkgdir}
 	rm -rf ${pkgdir}
-    # remount devices via /etc/fstab
+    # remount all devices via /etc/fstab
     depmod -a
 fi
 

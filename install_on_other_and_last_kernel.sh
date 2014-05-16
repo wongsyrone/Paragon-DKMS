@@ -45,7 +45,7 @@ install_dkms() {
     echo -e "\033[32m>> Load kernel module: ${MODULE_NAME}\033[0m"
     modprobe ${MODULE_NAME} 2>&1
 
-    echo -e "\033[33m Attention: Please add entry below when installing on the **LAST** kernel you want \033[0m"
+    echo -e "\033[33m Attention: Please add item below when installing on the **LAST** kernel you want \033[0m"
     echo -e "\033[33m   Are you sure you are installing on the **LAST** kernel ? [yes/no]\033[0m"
     read answer
     case "$answer" in
@@ -68,7 +68,7 @@ install_dkms() {
         fi
     ;;
     *)
-        echo -e "\e[00;31mWe will not add entry to /etc/modules and /etc/fstab \e[00m"
+        echo -e "\e[00;31mWe will not add item to /etc/modules and /etc/fstab \e[00m"
     ;;
     esac
 }
