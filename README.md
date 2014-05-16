@@ -1,26 +1,26 @@
-# Paragon UFSD driver with DKMS support
+# Paragon UFSD kernel module with DKMS support
 
-##### Support DKMS framework on Ubuntu 12.04 LTS, the only thing you need is Express(FREE) version
+##### Support DKMS framework on Ubuntu 12.04 LTS, you need Express(FREE) version to do this trick. :)
 
 ## Usage
 
-**MUST EXECUTE ./uninstall.sh FIRST!!!**
+**YOU MUST EXECUTE ./uninstall.sh FIRST!!!**
 
 
 #### First Kernel Install
-**DO NOT ADD /etc/fstab and /etc/modules ENTRY IF YOU HAVE MULTI-KERNEL**
+**DO NOT ADD /etc/fstab and /etc/modules ITEM IF YOU HAVE MULTI-KERNEL**
 
     $ chmod +x install_on_first_kernel.sh
     # ./install_on_first_kernel.sh
 
 #### Other Kernel Install
-**DO NOT ADD /etc/fstab and /etc/modules ENTRY**
+**DO NOT ADD /etc/fstab and /etc/modules ITEM**
 
     $ chmod +x install_on_other_and_last_kernel.sh
     # ./install_on_other_and_last_kernel.sh
     
 #### Last Kernel Install
-**BE SURE TO ADD /etc/fstab and /etc/modules ENTRY**
+**BE SURE TO ADD /etc/fstab and /etc/modules ITEM AT LAST**
 
     $ chmod +x install_on_other_and_last_kernel.sh
     # ./install_on_other_and_last_kernel.sh
