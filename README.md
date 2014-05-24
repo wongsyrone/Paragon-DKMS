@@ -2,6 +2,10 @@
 
 ##### Support DKMS framework on Ubuntu 12.04 LTS, you need Express(FREE) version to do this trick. :)
 
+## Kernel Supported
+
+Paragon-express-8.9.0 ... supported up to Linux 3.11.x, be careful when you upgrade your Linux distribution.
+
 ## Usage
 
 **YOU MUST EXECUTE ./uninstall.sh FIRST!!!**
