@@ -5,6 +5,7 @@
 ## Licence
 
 MIT
+
 ps: Modified from [this repo](https://github.com/bySabi/paragon-dkms)
 
 ## Kernel Supported
@@ -39,10 +40,12 @@ Paragon-express-8.9.0 ... support up to Linux 3.11.x, be careful when you upgrad
 **WILL REMOVE ALL KERNEL MODULES ON ALL KERNEL**
 
 using scripts:
+
     $ chmod +x uninstall.sh
     # ./uninstall.sh
     
 using command manually:
+
     # rmmod -f -v -w ufsd                              /* delete kernel modules                                */
     # rmmod -f -v -w jnl
     $ dkms status                                      /* check whether we have already installed paragon ufsd */
