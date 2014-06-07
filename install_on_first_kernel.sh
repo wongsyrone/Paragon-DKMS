@@ -82,8 +82,9 @@ install_dkms() {
     modprobe ${MODULE_NAME} 2>&1
 
     echo -e "\033[33m Attention: Please add item below when installing on the **last** kernel you want \033[0m"
-    echo -e "\033[33m   >>>>>>>>>>>>>IF you have only ONE kernel, Please ADD item <<<<<<<<<<<<<<<< \033[0m"
-    echo -e "\033[33m   Do you want to add item to /etc/fstab and /etc/modules ? [yes/no]\033[0m"
+    echo -e "\033[33m            **You should edit /etc/fstab item before installation**               \033[0m"
+    echo -e "\033[33m   >>>>>>>>>>>>>IF you have only ONE kernel, Please ADD them <<<<<<<<<<<<<<<< \033[0m"
+    echo -e "\033[33m   Do you want to add item to /etc/fstab and /etc/modules for startup purpose? [yes/no]\033[0m"
     read answer
     case "$answer" in
     y|Y|yes|Yes|YeS|yEs|YES)

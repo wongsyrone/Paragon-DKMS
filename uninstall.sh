@@ -16,13 +16,14 @@ fi
 pkgname=paragon-ufsd
 pkgdir=${pkgname}-${pkgver}
 
+# remove previous added loading module and mount item  
+sed -i '/ufsd/d' /etc/modules
+sed -i '/ufsd/d' /etc/fstab
+
 ufsd_status=$(dkms status -m ${pkgname} -v ${pkgver})
 if ! [ "$ufsd_status" == ""  ]; then
     rmmod -f -v -w ufsd
     rmmod -f -v -w jnl
-    # remove previous added loading module and mount item  
-    sed -i '/ufsd/d' /etc/modules
-    sed -i '/ufsd/d' /etc/fstab
     dkms uninstall -m ${pkgname} -v ${pkgver}
 	dkms remove -m ${pkgname} -v ${pkgver} --all
 	rm -rf /var/lib/dkms/${pkgname}

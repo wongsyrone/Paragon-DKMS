@@ -46,6 +46,7 @@ install_dkms() {
     modprobe ${MODULE_NAME} 2>&1
 
     echo -e "\033[33m Attention: Please add item below when installing on the **LAST** kernel you want \033[0m"
+    echo -e "\033[33m            **You should edit /etc/fstab item before installation**               \033[0m"
     echo -e "\033[33m   Are you sure you are installing on the **LAST** kernel ? [yes/no]\033[0m"
     read answer
     case "$answer" in
