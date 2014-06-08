@@ -12,33 +12,34 @@ ps: Modified from [this repo](https://github.com/bySabi/paragon-dkms)
 
 Paragon-express-8.9.0 ... support up to Linux 3.11.x, be careful when you upgrade your Linux distribution.
 
+## ATTENTION !!
+
+**You should read this carefully**
+
+* You should cleanup all previous paragon ufsd(aka NTFS driver) kernel modules at first to avoid some wierd issues.
+* You can use `uninstall.sh` to uninstall or use command given below if the script crashed.
+* It should be noted that the uninstall procedure will remove all modules on all kernels, and you'd better try `$ dkms status` at first.
+* `/etc/fstab` and `/etc/modules` will mount your ntfs partitions when booting, and you will get stuck when there was no `ufsd` kernel installed.
+* Only add `/etc/fstab` and `/etc/modules` item when installing on the **LAST** kernel on your system
+
 ## Usage
 
-**YOU MUST CLEANUP ALL PREVIOUS UFSD MODULE FILES AT FIRST TO AVOID PROBLEMS**
-
-**YOU CAN EXECUTE ./uninstall.sh OR USING COMMAND BELOW MANUALLY IF UNINSTALL SCRIPT CRASHED**
-
 #### First Kernel Install
-**DO NOT ADD /etc/fstab and /etc/modules ITEM IF YOU HAVE MULTI-KERNEL**
 
     $ chmod +x install_on_first_kernel.sh
     # ./install_on_first_kernel.sh
 
 #### Other Kernel Install
-**DO NOT ADD /etc/fstab and /etc/modules ITEM**
 
     $ chmod +x install_on_other_and_last_kernel.sh
     # ./install_on_other_and_last_kernel.sh
     
 #### Last Kernel Install
-**BE SURE TO ADD /etc/fstab and /etc/modules ITEM AT LAST**
 
     $ chmod +x install_on_other_and_last_kernel.sh
     # ./install_on_other_and_last_kernel.sh
     
 #### Uninstall 
-
-**WILL REMOVE ALL KERNEL MODULES ON ALL KERNEL**
 
 using scripts:
 
