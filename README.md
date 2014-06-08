@@ -18,9 +18,9 @@ Paragon-express-8.9.0 ... support up to Linux 3.11.x, be careful when you upgrad
 
 * You should cleanup all previous paragon ufsd(aka NTFS driver) kernel modules at first to avoid some wierd issues.
 * You can use `uninstall.sh` to uninstall or use command given below if the script crashed.
-* It should be noted that the uninstall procedure will remove all modules on all kernels, and you'd better try `$ dkms status` at first.
-* `/etc/fstab` and `/etc/modules` will mount your ntfs partitions when booting, and you will get stuck when there was no `ufsd` kernel installed.
-* Only add `/etc/fstab` and `/etc/modules` item when installing on the **LAST** kernel on your system
+* It should be noted that the uninstall procedure will remove all modules on all kernels, and you'd better try `$ dkms status` at the very beginning.
+* `/etc/fstab` and `/etc/modules` will mount your ntfs partitions when booting, and you will get stuck when there was no `ufsd` module installed.
+* ONLY add `/etc/fstab` and `/etc/modules` item when installing on the **LAST** kernel on your system
 
 ## Usage
 
