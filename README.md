@@ -14,8 +14,9 @@ Paragon-express-8.9.0 ... support up to Linux 3.11.x, be careful when you upgrad
 
 ## Usage
 
-**YOU MUST EXECUTE ./uninstall.sh FIRST TO CLEANUP ALL PREVIOUS UFSD MODULE FILES**
+**YOU MUST CLEANUP ALL PREVIOUS UFSD MODULE FILES AT FIRST TO AVOID PROBLEMS**
 
+**YOU CAN EXECUTE ./uninstall.sh OR USING COMMAND BELOW MANUALLY IF UNINSTALL SCRIPT CRASHED**
 
 #### First Kernel Install
 **DO NOT ADD /etc/fstab and /etc/modules ITEM IF YOU HAVE MULTI-KERNEL**
