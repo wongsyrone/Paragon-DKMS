@@ -33,7 +33,7 @@ if ! [ "$ufsd_status" == ""  ]; then
     depmod -a
 fi
 
-# remove kernel module again if something went wrong
+# remove kernel module again in case of something going wrong
 ufsd_module_status=$(lsmod | grep -i "ufsd")
 if ! [ "$ufsd_module_status" == "" ]; then
     rmmod -f -v -w ufsd

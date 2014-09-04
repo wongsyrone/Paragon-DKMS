@@ -1,6 +1,6 @@
 # Paragon UFSD kernel module with DKMS support
 
-##### Support DKMS framework on Ubuntu 12.04 LTS, you need Express(FREE) version to do this trick. :)
+##### Support DKMS framework on Ubuntu 14.04 LTS, you need Express(FREE) version to do this trick. :)
 
 ## Licence
 
@@ -10,7 +10,7 @@ ps: Modified from [this repo](https://github.com/bySabi/paragon-dkms)
 
 ## Kernel Supported
 
-Paragon-express-8.9.0 ... support up to Linux 3.11.x, be careful when you upgrade your Linux distribution.
+Paragon-express-9.0 ... Support modern Linux Kernels from 2.6.36 up to 3.14.x (According to official instructions, UFSD driver was internally tested with Kernels up to 3.14.4).
 
 ## ATTENTION !!
 
